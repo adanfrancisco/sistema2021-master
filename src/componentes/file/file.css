@@ -1,0 +1,53 @@
+.file-select {          
+    position: relative;
+    display: inline-block;
+  }
+  .background-red {
+    background-color: red;
+  }
+  
+  .background-blue {
+    background-color: blue;
+  }
+  .file-select::before {
+    background-color: #e62a1c;
+    color: white;
+    display: flex;            
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'SUBIR'; /* texto por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 10;                
+  }
+   
+  .file-select input[type="file"] {
+    opacity: 0;
+    width: 300px;
+    height: 32px;
+    display: inline-block;            
+  }
+   
+  #src-file1::before {
+    content: 'SUBIR';
+  }
+   
+  #src-file2::before {
+    content: '--    ';
+  }
+
+  #nprogress .bar {
+    background: red !important;
+}
+
+#nprogress .peg {
+    box-shadow: 0 0 10px red, 0 0 5px red !important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: red !important;
+    border-left-color: red !important;
+}
